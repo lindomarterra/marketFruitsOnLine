@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icon-youtube.svg" type="image/x-icon">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title> Market-fruits: home-01 </title>
+</head>
+
+<body>
+
+  <!--FLOAT-ICONS-->
+  <div>
+    <!--WHATSAPP-->
+    <a href="https://web.whatsapp.com/send?phone=5551998068587" target="_blank"> <img class="whatsLogo"
+        src="img/whatsappLogo.png" title="contact us by whatsapp"> </a>
+    <!--INSTAGRAN-->
+    <a href="https://www.instagram.com" target="_blank"> <img class="instaLogo" src="img/instagramLogo.png"
+        title="follow us on instagram"> </a>
+    <!--CART-->
+    <a data-bs-toggle="modal" data-bs-target="#modalCart"  class="CartLogo" style="cursor: pointer;"  >
+      <span
+        class="badge bg-danger text-light position-absolute rounded-pill mb-5 ms-3 badgeOnNavbar border border-2 border-white">
+        <small> 0 </small>
+      </span>
+      <i class="bi-cart text-black" style="font-size: 30px; line-height: 30px;"></i>
+    </a>
+  </div>
+
+
+  <!--DIV THAT WRAP WHOLE BODY-->
+  <div class="d-flex flex-column wrapper">
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-lg">
+      <div class="container">
+
+        <a href="index.html" target="_self" class="navbar-brand">
+          <img src="img/logo.png" alt="logotipo" style="width: 40px; height: 40px;">
+        </a>
+
+        <a href="index.html" target="_self" class="navbar-brand">
+          <strong class="logoTop">Market</strong>
+          <small class="logoBottom">fruits</small>
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+          <ul class="navbar-nav d-flex flex-grow-1">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-white active"> Home </a>
+            </li>
+          </ul>
+
+          <div class="align-self-end">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a href="index(contact).html" class="nav-link text-white"> Contact </a>
+              </li>
+              <li class="nav-item">
+                <a href="index(signup).html" class="nav-link text-white"> SignUp </a>
+              </li>
+              <li class="nav-item">
+                <a href="index(login).html" class="nav-link text-white"> Login </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!--CAROUSEL-BANNER-->
+    <div class="container mt-3">
+      <div id="banner" class="carousel slide carousel-dark" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/slideSmall01.jpg" class="d-block d-md-none w-100">
+            <img src="img/slideBig01.jpg" class="d-none d-md-block w-100">
+          </div>
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/slideSmall02.webp" class="d-block d-md-none w-100">
+            <img src="img/slideBig02.webp" class="d-none d-md-block w-100">
+          </div>
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/slideSmall03.jpg" class="d-block d-md-none w-100">
+            <img src="img/slideBig03.jpg" class="d-none d-md-block w-100">
+          </div>
+          <div class="carousel-inner">
+
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <hr class="mt-3">
+    </div>
+
+
+    <!--MAIN-->
+    <main class="flex-fill">
+      <div class="container">
+
+        <!--pagination-top-->
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Digite aqui o que procura...">
+                <button type="button" class="btn btn-danger"> Enter </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+              <form class="d-inline-block">
+                <select class="form-select form-select-sm">
+                  <option> sort by lowest price </option>
+                  <option> sort by highest price </option>
+                  <option selected> sort by larger quantity </option>
+                </select>
+              </form>
+
+              <nav class="d-inline-block me-3">
+                <ul class="pagination pagination-sm my-0">
+                  <li class="page-item disabled"><a class="page-link" href="index(home-01).html">1</a></li>
+                  <li class="page-item"><a class="page-link" href="index(home-02).html">2</a></li>
+                  <li class="page-item"><a class="page-link" href="index(home-03).html">3</a></li>
+                  <li class="page-item"><a class="page-link" href="index(home-04).html">4</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-3">
+
+        <!--PRODUCTS-->
+        <div class="row g-3">
+
+
+          <!--aplle-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card text-center bg-light">
+              <spam class="position-absolute end-0 p-2 text-danger" style="cursor: pointer;">
+                <i class="bi-suit-heart" style="font-size: 20px; line-height: 20px;"></i>
+              </spam>
+              <a href="index(products).html" target="_self" class="hoverProducts">
+                <img src="img/apple.jpg" class="card-img-top imgProduct">
+              </a>
+              <div class="card-header">
+                <spam class="priceProduct">$ 1,50</spam>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title nameProduct"> Apple </h5>
+                <p class="card-text truncar-3l descriptionProduct">
+                  Apple of the best possible quality straight from the farm to your table.
+
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-sm btn-danger mt-2 d-block shadow-lg btnAddProduct"> Add to Cart </a>
+                <small class="text-success">
+                  <spam class="qtdInStock">320,5</spam>kg in stock
+                </small>
+              </div>
+            </div>
+          </div>
+
+
+            <!--banana-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <spam class="position-absolute end-0 p-2 text-danger" style="cursor: pointer;">
+                  <i class="bi-suit-heart" style="font-size: 20px; line-height: 20px;"></i>
+                </spam>
+                <a href="index(products).html" target="_self" class="hoverProducts">
+                  <img src="img/banana.jpg" class="card-img-top imgProduct">
+                </a>
+                <div class="card-header">
+                  <spam class="priceProduct">$ 2,50</spam>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title nameProduct"> Banana </h5>
+                  <p class="card-text truncar-3l descriptionProduct">
+                    Organic Banana of the best possible quality straight from the farm to your table.
+  
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-sm btn-danger mt-2 d-block shadow-lg btnAddProduct"> Add to Cart </a>
+                  <small class="text-success">
+                    <spam class="qtdInStock">320,5</spam>kg in stock
+                  </small>
+                </div>
+              </div>
+            </div>
+       
+
+
+          <!--avocato-disabled-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card text-center bg-light">
+              <spam class="position-absolute end-0 p-2 text-danger" style="cursor: pointer;">
+                <i class="bi-suit-heart" style="font-size: 20px; line-height: 20px;"></i>
+              </spam>
+
+              <a href="index(products).html" target="_self" class="hoverProducts">
+                <img src="img/avocato.jpg" class="card-img-top imgProduct">
+              </a>
+              <div class="card-header">
+                <spam class="priceKiloProduct">$ 3,50</spam>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title nameProduct"> Avocato </h5>
+                <p class="card-text truncar-3l">
+                  Avocado Butter of the best possible quality straight from the farm to your table.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-light  btn-sm mt-2 d-block disabled btnAddProduct" > <small>Supplying Stock</small> </a>
+                <small class="text-danger"> Sold Out </small>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-3">
+
+          <!--pagination-bottom-->
+          <div class="row">
+
+            <div class="col-12">
+              <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                <form class="d-inline-block">
+                  <select class="form-select form-select-sm">
+                    <option> sort by lowest price </option>
+                    <option> sort by highest price </option>
+                    <option selected> sort by larger quantity </option>
+                  </select>
+                </form>
+
+                <nav class="d-inline-block me-3">
+                  <ul class="pagination pagination-sm my-0">
+                    <li class="page-item disabled"><a class="page-link" href="index(home-01).html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="index(home-02).html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="index(home-03).html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="index(home-04).html">4</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </main>
+
+
+    <!--MODAL - CART-->
+    <div class="modal fade" id="modalCart">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header bg-danger">
+            <h6 class="modal-title text-white"> SHOPPING CART </h6>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body parentUlElement">
+
+            <div class="my-5 text-center divEmptyCart">
+              <p class="my-5">Your Cart is empty!</p>
+            </div>
+
+
+            <ul class="list-group">
+
+
+           <!-- 
+
+                <li class="list-group-item">
+
+                  <h5 class="col-12 text-center text-danger"> <b class="product-name"> Apple </b> </h5>
+
+                <div class="row">
+
+                  <div class="col-5">
+                    <a href="index(products).html" target="_self" class="hoverProducts"><img src="img/apple.jpg"
+                        class="img-thumbnail border-0 product-img"></a>
+                  </div>
+
+                  <div class="col-7 text-end p-2 mt-2 mt-md-4">
+
+                    <div class="input-group">
+
+                      <input type="number" class="text-center form-control border-dark qtd-input" value="1"  min="1" max="10" style="width: 50px;">                  
+
+                      <button class="btn btn-outline-danger border-dark btn-sm"
+                        title="click exactly on the trash can to remove">
+                        <i class="bi-trash btnRemove" style="font-size: 16px; line-height: 16px;"></i>
+                      </button>
+                    </div>
+
+                    <div class="text-end mt-2">
+                      <spam class="text-secondary"> Kilo: <spam class="product-price">$ 1,50 </spam>  </spam>  
+                      </br>
+                      <spam class="text-secondary"> Price iten:  <strong class="totalPrice"> $ 1,50 </strong> </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </li>
+
+           -->   
+          
+
+              
+
+            </ul>
+
+          </div>
+
+          <div class="modal-footer d-flex flex-column">
+
+            <h6 class="my-3"> Final Payment: <strong class="paymentFinal"> $ 0,00 </strong> </h6>
+
+            <div class="totalPayment my-3">
+              <a href="index.html" class="btn btn-sm btn-danger" style="width: 150px;"> <strong> Back To Main Page
+                </strong> </a>
+              <a href="index.html" class="btn btn-sm btn-success" style="width: 150px;"> <strong> Next </strong> </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="bg-danger text-white p-3 mt-5 ">
+      <div class="container">
+        <div class="row g-3">
+
+          <div class="col-12 col-md-4 text-center border-1">
+            &copy; 2023 - Market Fruits Online <br />
+            Street virtual nonexistent, 171 PC-land / PC <br />
+            CPNJ: 99.999.999/0001-99
+          </div>
+
+          <div class="col-12 col-md-4 text-center border-1">
+            <a href="index(privacypolicy).html" class="text-decoration-none text-white footerHover"> Privacy Policy </a>
+            <br />
+            <a href="index(termsofuse).html" class="text-decoration-none text-white footerHover"> Terms of Use </a>
+            <br />
+            <a href="index(aboutus).html" class="text-decoration-none text-white footerHover"> About Us </a> <br />
+            <a href="index(exchange).html" class="text-decoration-none text-white footerHover"> Exchanges and Returns
+            </a>
+          </div footerHover>
+
+          <div class="col-12 col-md-4 text-center">
+
+            <p class="my-1">
+              <a href="https://web.whatsapp.com/send?phone=5551998068587" target="_blank"
+                class="text-decoration-none text-white footerHover">
+                5551-99806.8587
+              </a>
+            </p>
+            <p class="my-1">
+              <a href="https://pt-br.facebook.com" target="_blank" class="text-decoration-none text-white footerHover">
+                facebook/marketfruits
+              </a>
+            </p>
+            <p class="my-1">
+              <a href="https://www.instagram.com" target="_blank" class="text-decoration-none text-white footerHover">
+                instagram/marketfruits
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/signup.js"></script>
+  <script src="js/login.js"></script>
+
+
+
+</body>
+
+</html>

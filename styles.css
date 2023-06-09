@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Yeon+Sung&display=swap');
+
+.body{ min-width: 360px;}
+
+.wrapper{ min-height: 100vh;}
+
+p.truncar-3l{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+/* MARKET FRUITS */
+.logoTop{
+    text-shadow: 3px 3px 3px #222;
+    font-weight: 700;
+}
+.logoBottom{
+    font-style: italic;
+    text-shadow: 2px 2px 2px #222;
+
+}
+
+.footerHover:hover{ opacity: 50%; }
+
+.instaLogo{
+    width: 35px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 100;
+    transition: all linear 300ms;
+}
+.whatsLogo{
+    width: 35px;
+    position: fixed;
+    bottom: 9%;
+    right: 2%;
+    z-index: 100;
+    transition: all linear 300ms;
+}
+.instaLogo:hover{
+    width: 40px;
+}
+.whatsLogo:hover{
+    width: 40px;
+}
+.CartLogo{
+    width: 35px;
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    z-index: 100;
+    transition: all linear 300ms;
+}
+
+
+.hoverProducts:hover{ opacity: 60%;}
+
+
+/*CART AREA*/
+.totalPrice{ 
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+
+
+
+/*CUSTOMERS AREA*/
+
+label .text-dark{
+    transition: color 0.2s ease;
+}
+label:hover .text-dark{
+    transition: color 0.2s ease;
+    color: white  !important;
+}
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger{
+    transition: color 0.2s ease;
+    color: white  !important;   
+    background-color: #dc3545;
+}
+.flex-even{
+    flex: 1;  /* VAI MANTER A MESMA LARGURA ENTRE OS 3 ELEMENTOS */
+    min-width: 300px;
+}
+/* NÃO FUNCIONOU */
+.accordion.button:not(.collapsed){
+    color: white;
+    background-color: #dc3545;
+}
+
+
+
+
+
+
+
+
